@@ -63,7 +63,7 @@ def get_num_diners(prompt):
     while not is_valid:
         try:
             num_diners = int(input(prompt))
-            if num_diners > 0:
+            if num_diners >= 0:
                 is_valid = True
             else:
                 print("Invalid input. The number of diners must be a number greater than 0 and not contain any decimals.")
