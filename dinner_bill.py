@@ -66,9 +66,9 @@ def get_num_diners(prompt):
             if num_diners >= 0:
                 is_valid = True
             else:
-                print("Invalid input. The number of diners must be a number greater than 0 and not contain any decimals.")
+                print("Invalid input. The number of diners must be a number greater than or equal to 0 and not contain any decimals.")
         except ValueError:
-            print("Invalid input. The number of diners must be a number greater than 0 and not contain any decimals.")
+            print("Invalid input. The number of diners must be a number greater than or equal to 0 and not contain any decimals.")
         except:  # catch all exception
             print("There was an error with your input. Please try again.")
     return num_diners
