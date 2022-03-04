@@ -14,8 +14,8 @@ def main():
         cost = 0
 
         # get the information from the user and calculate the price
-        # cost += get_appetizer_info()
-        # cost += get_entre_info()
+        cost += get_appetizer_info()
+        cost += get_entre_info()
         cost += get_dessert_info()
 
         # display the cost rounded to 2 decimal places
@@ -36,7 +36,7 @@ def main():
 def get_appetizer_info():
     num_diners = get_num_diners("How many diners are having an appetizer? ")
     cost = get_cost("What is the cost of an one appetizer? $")
-    # return appetizer.calc_cost(num_diners, cost)
+    return appetizer.calc_cost(num_diners, cost)
 
 
 # Asks the user for information on the entres
@@ -44,7 +44,7 @@ def get_appetizer_info():
 def get_entre_info():
     num_diners = get_num_diners("How many diners are having an entre? ")
     cost = get_cost("What is the cost of an one entre? $")
-    # return entre.calc_cost(num_diners, cost)
+    return entre.calc_cost(num_diners, cost)
 
 
 # Asks the user for information on the desserts
