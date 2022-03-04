@@ -1,0 +1,6 @@
+Kenny Grandell
+3/4/2022
+entre
+
+define calc_cost s num_diner, cost
+  return num_diners * cost
